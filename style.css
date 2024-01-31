@@ -1,119 +1,242 @@
 html {
-   background-color: rgb(71, 179, 179);
+   background-color: rgb(97, 230, 230);
 }
 
-/*header style*/
-header {
-   text-align: center;
-   padding: 5px;
-   background-color: darkred;
-   font-size: x-large;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+@media screen and (min-width: 768px) {
 
-/*navigation menu style*/
-nav {
-   text-align: center;
-   word-spacing: 5px;
-   Padding: 10px;
-}
+   /*header style*/
+   header {
+      text-align: center;
+      padding: 5px;
+      background-color: darkred;
+      font-size: x-large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   }
 
-nav a {
-   margin-right: 20px;
-}
+   /*navigation menu style*/
+   nav {
+      text-align: center;
+      word-spacing: 5px;
+      Padding: 10px;
+   }
 
-/*creating the two-column layout*/
-* {
-   box-sizing: border-box;
-}
+   nav a {
+      margin-right: 20px;
+   }
 
-
-/*MAIN*/
-/**Flex**/
-.flex-container {
-   background-color: #383297;
-   overflow: hidden;
-   display: flex;
-   margin: 1%;
-   padding: 1%;
-}
-
-.item {
-   margin: 1%;
-   padding: 0.5%;
-   width: 110px;
-   min-width: 0;
-   background-color: #3eb133;
-   color: white;
-   font-family: monospace;
-}
-
-.auto {
-   flex: auto;
-}
-
-/**Actu**/
-/*Actu ligne*/
-
-.actuligne {
-   display: flex;
-}
-
-.actuligne h2 {
-   flex:auto
-}
-
-.poupoule {
-   flex:1;
-   width: 100%;
-}
-
-/*************/
-
-.actu h2 {
-   text-align: center;
-   font-size: 35px;
-}
-
-.actu a {
-   font-size: 20px;
-}
-
-.lien {
-   display: flex;
-   flex-direction: column;
-}
-
-.lien a {
-   margin-bottom: 10px;
-}
-
-/*Pour l'image*/
-.profil h3 {
-   text-align: center;
-   font-size: 35px;
-}
-
-.profil img {
-   width: 100%;
-   height:auto;
-   display: block;
-   margin-top: 10px;
-}
+   /*creating the two-column layout*/
+   * {
+      box-sizing: border-box;
+   }
 
 
-/*FOOTER*/
-footer {
-   background-color: rgb(217, 231, 17);
-   text-align: right;
-}
+   /*MAIN*/
+   /**Flex**/
+   .flex-container {
+      background-color: #383297;
+      overflow: hidden;
+      display: flex;
+      margin: 1%;
+      padding: 1%;
+   }
 
-footer p {
-   Padding: 10px;
-}
+   .item {
+      margin: 1%;
+      padding: 0.5%;
+      width: 110px;
+      min-width: 0;
+      background-color: #3eb133;
+      color: white;
+      font-family: monospace;
+   }
 
-footer nav {
-   text-align: right;
+   .auto {
+      flex: auto;
+   }
+
+   /**Actu**/
+   /*Actu ligne*/
+
+   .actuligne {
+      display: flex;
+   }
+
+   .actuligne h2 {
+      flex: auto
+   }
+
+   .poupoule {
+      flex: 1;
+      width: 100%;
+   }
+
+   /*************/
+
+   .actu h2 {
+      text-align: center;
+      font-size: 35px;
+   }
+
+   .actu a {
+      font-size: 20px;
+   }
+
+   .lien {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .lien a {
+      margin-bottom: 10px;
+   }
+
+   /*Pour l'image*/
+   .profil h3 {
+      text-align: center;
+      font-size: 35px;
+   }
+
+   .profil img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 10px;
+   }
+
+
+   /*FOOTER*/
+   footer {
+      background-color: rgb(217, 231, 17);
+      text-align: right;
+   }
+
+   footer p {
+      Padding: 10px;
+   }
+
+   footer nav {
+      text-align: right;
+   }
 }
 
 /******************/
+
+
+/* Styles spécifiques pour les écrans étroits (mobiles) */
+@media screen and (max-width: 767px) {
+
+   /*header style*/
+   header {
+      text-align: center;
+      padding: 5px;
+      background-color: rgb(185, 77, 77);
+      font-size: x-large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   }
+
+   /*navigation menu style*/
+   nav {
+      text-align: center;
+   }
+
+   nav a {
+      margin-right: 20px;
+   }
+
+   /*creating the two-column layout*/
+   * {
+      box-sizing: border-box;
+      flex-direction: column;
+   }
+
+
+   /*MAIN*/
+   /**Flex**/
+   .flex-container {
+      background-color: #383297;
+      margin: 1%;
+      padding: 3%;
+   }
+
+   .item {
+      margin: 1%;
+      padding: 1%;
+      width: 100%;
+      min-width: 0;
+      background-color: #3eb133;
+      color: white;
+      font-family: monospace;
+   }
+
+   .auto {
+      flex: auto;
+   }
+
+   /**Actu**/
+   /*Actu ligne*/
+
+   .actuligne {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .actuligne h2 {
+      flex: auto
+   }
+
+   .poupoule {
+      flex: 1;
+      width: 100%;
+   }
+
+   /*************/
+
+   .actu h2 {
+      text-align: center;
+      font-size: 35px;
+   }
+
+   .actu a {
+      font-size: 20px;
+   }
+
+   .lien {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .lien a {
+      margin-bottom: 10px;
+   }
+
+   /*Pour l'image*/
+   .profil h3 {
+      text-align: center;
+      font-size: 35px;
+   }
+
+   .profil img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 10px;
+   }
+
+
+   /*FOOTER*/
+   footer {
+      background-color: rgb(217, 231, 17);
+      text-align: right;
+      display: flex;
+      flex-direction: row;
+   }
+
+   footer p {
+      Padding: 10px;
+   }
+
+   footer nav {
+      text-align: right;
+      margin: 25px;
+   }
+}
