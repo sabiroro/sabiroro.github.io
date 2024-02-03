@@ -66,8 +66,10 @@ html {
    }
 
    .poupoule {
-      flex: 1;
-      width: 100%;
+      flex: auto;
+      width: 20%;
+      height:fit-content;
+      display: none;
    }
 
    /*************/
@@ -123,7 +125,7 @@ html {
 
 
 /* Styles spécifiques pour les écrans étroits (mobiles) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
 
    /*header style*/
    header {
@@ -185,8 +187,10 @@ html {
    }
 
    .poupoule {
-      flex: 1;
-      width: 100%;
+      flex: auto;
+      width: 20%;
+      height: auto;
+      display: none;
    }
 
    /*************/
